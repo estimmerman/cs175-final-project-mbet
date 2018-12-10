@@ -5,12 +5,21 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     public float speed;
+    public GameObject Catapult;
 
     private Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Catapult.GetComponent<Animation>().Play("CatapultAnim");
+        }
     }
 
     void FixedUpdate()
