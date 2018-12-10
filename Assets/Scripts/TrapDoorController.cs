@@ -12,6 +12,8 @@ public class TrapDoorController : MonoBehaviour {
         {
             TrapDoor.GetComponent<Animation>().Play("TrapAnim");
             gameObject.SetActive(false);
+
+            CameraController.canMoveCamera = true;
         }
     }
 }
