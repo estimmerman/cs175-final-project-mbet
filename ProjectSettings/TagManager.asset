@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GenericMarble
+  - SwingingBall
+  - PinBase
   layers:
   - Default
   - TransparentFX
